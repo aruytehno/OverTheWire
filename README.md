@@ -156,3 +156,12 @@ telnet localhost 30000
 MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit16.html">Level 15 → Level 16</a></summary>
+
+```shell
+sshpass -p 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo ssh bandit15@bandit.labs.overthewire.org -p 2220
+openssl s_client -connect localhost:30001
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+```
+</details>
