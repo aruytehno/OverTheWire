@@ -84,3 +84,11 @@ sshpass -p dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc ssh bandit8@bandit.labs.overthewire.
 sort data.txt | uniq -u
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit10.html">Level 9 → Level 10</a></summary>
+
+```shell
+sshpass -p 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM ssh bandit9@bandit.labs.overthewire.org -p 2220
+strings data.txt | grep -i "=" 
+```
+</details>
