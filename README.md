@@ -222,5 +222,15 @@ echo -n '0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO' | nc -l -p 1234 & [1] 24661
 
 ```shell
 sshpass -p EeoULMCra2q0dSkYj561DX7s1CpBuOBt ssh bandit21@bandit.labs.overthewire.org -p 2220
+cd /etc/cron.d
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit23.html">Level 22 → Level 23</a></summary>
+
+```shell
+sshpass -p tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q ssh bandit22@bandit.labs.overthewire.org -p 2220
 ```
 </details>
