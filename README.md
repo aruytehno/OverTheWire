@@ -100,3 +100,13 @@ sshpass -p FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey ssh bandit10@bandit.labs.overthewire
 base64 --decode data.txt 
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit12.html">Level 11 → Level 12</a></summary>
+
+[Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+```shell
+sshpass -p dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr ssh bandit11@bandit.labs.overthewire.org -p 2220
+cat data.txt | tr [A-Za-z] [N-ZA-Mn-za-m]
+```
+</details>
