@@ -143,5 +143,7 @@ rm -r /tmp/tmp_bandit12
 
 ```shell
 sshpass -p FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit14
 ```
 </details>
