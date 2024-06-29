@@ -68,3 +68,11 @@ sshpass -p HWasnPhtq9AVKe0dmk45nxy20cvUa6EG ssh bandit6@bandit.labs.overthewire.
 find / -size 33c -user bandit7 -group bandit6 2> /dev/null -exec cat {} +
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit8.html">Level 7 → Level 8</a></summary>
+
+```shell
+sshpass -p morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj ssh bandit7@bandit.labs.overthewire.org -p 2220
+grep -n "millionth" data.txt | cut -f2 -d:
+```
+</details>
