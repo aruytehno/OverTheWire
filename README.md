@@ -1,6 +1,8 @@
 # [OverTheWire](https://overthewire.org/)
 ![alt text](img/workplace.png)
 
+## [Bandit](https://overthewire.org/wargames/bandit/)
+
 <details>
 <summary><a href="https://overthewire.org/wargames/bandit/bandit0.html">bandit0</a></summary>
 
