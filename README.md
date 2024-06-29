@@ -165,3 +165,24 @@ openssl s_client -connect localhost:30001
 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit17.html">Level 16 → Level 17</a></summary>
+
+```text
+PORT      STATE SERVICE     VERSION
+31046/tcp open  echo
+31518/tcp open  ssl/echo
+31691/tcp open  echo
+31790/tcp open  ssl/unknown
+31960/tcp open  echo
+```
+```shell
+sshpass -p kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx ssh bandit16@bandit.labs.overthewire.org -p 2220
+#nmap -sV localhost -p 31000-32000
+rm -r /tmp/sshme
+mkdir /tmp/sshme && cd $_
+echo kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx | openssl s_client -connect localhost:31790 -ign_eof > /tmp/sshme/rsa_key
+chmod 600 rsa_key
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i rsa_key bandit17@bandit.labs.overthewire.org -p 2220
+```
+</details>
