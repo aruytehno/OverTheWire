@@ -92,3 +92,11 @@ sshpass -p 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM ssh bandit9@bandit.labs.overthewire.
 strings data.txt | grep -i "=" 
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit11.html">Level 10 → Level 11</a></summary>
+
+```shell
+sshpass -p FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey ssh bandit10@bandit.labs.overthewire.org -p 2220
+base64 --decode data.txt 
+```
+</details>
