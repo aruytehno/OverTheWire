@@ -147,3 +147,12 @@ ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i sshkey.privat
 cat /etc/bandit_pass/bandit14
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit15.html">Level 14 → Level 15</a></summary>
+
+```shell
+sshpass -p MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS ssh bandit14@bandit.labs.overthewire.org -p 2220
+telnet localhost 30000
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+```
+</details>
