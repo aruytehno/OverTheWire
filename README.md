@@ -117,31 +117,25 @@ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
 
 ```shell
 sshpass -p 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 ssh bandit12@bandit.labs.overthewire.org -p 2220
-mkdir /tmp/a1b1
-cd /tmp/a1b1
+rm -r /tmp/tmp_bandit12
+mkdir /tmp/tmp_bandit12
+cd /tmp/tmp_bandit12
 cp ~/data.txt .
 xxd -r data.txt > bdata
-file bdata
 mv bdata bdata.gz
 gunzip bdata.gz
-file bdata
 mv bdata bdata.bz2
-file bdata
 bzip2 -d bdata.bz2
-file bdata
 mv bdata bdata.gz
 gunzip bdata.gz
 tar -xf bdata
-file data5.bin
 tar -xf data5.bin
-file data6.bin 
-file data6.bin.out
 bzip2 -d data6.bin
 tar -xf data6.bin.out
-file data8.bin
 mv data8.bin data8.bin.gz
 gunzip data8.bin.gz
 cat data8.bin
+rm -r /tmp/tmp_bandit12
 ```
 </details>
 <details>
