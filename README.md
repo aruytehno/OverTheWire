@@ -232,5 +232,18 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 ```shell
 sshpass -p tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q ssh bandit22@bandit.labs.overthewire.org -p 2220
+cd /etc/cron.d/
+cat /usr/bin/cronjob_bandit23.sh
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+cat /tmp/$(!!)
+cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit24.html">Level 23 → Level 24</a></summary>
+
+```shell
+sshpass -p 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga ssh bandit23@bandit.labs.overthewire.org -p 2220
+
 ```
 </details>
