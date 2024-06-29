@@ -208,3 +208,19 @@ sshpass -p cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8 ssh bandit19@bandit.labs.overthewire
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit21.html">Level 20 → Level 21</a></summary>
+
+```shell
+sshpass -p 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO ssh bandit20@bandit.labs.overthewire.org -p 2220
+echo -n '0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO' | nc -l -p 1234 & [1] 24661
+./suconnect 1234
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit22.html">Level 21 → Level 22</a></summary>
+
+```shell
+sshpass -p EeoULMCra2q0dSkYj561DX7s1CpBuOBt ssh bandit21@bandit.labs.overthewire.org -p 2220
+```
+</details>
