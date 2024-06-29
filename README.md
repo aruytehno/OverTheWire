@@ -53,10 +53,18 @@ find . -type f -exec file {} + | grep ASCII | cut -d: -f1 | xargs cat
 ```
 </details>
 <details>
-<summary><a href="https://overthewire.org/wargames/bandit/bandit5.html">Level 5 → Level 6</a></summary>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit6.html">Level 5 → Level 6</a></summary>
 
 ```shell
 sshpass -p 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw ssh bandit5@bandit.labs.overthewire.org -p 2220
 find . -type f -size 1033c -exec cat {} + | sed 's/ //g'
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit7.html">Level 6 → Level 7</a></summary>
+
+```shell
+sshpass -p HWasnPhtq9AVKe0dmk45nxy20cvUa6EG ssh bandit6@bandit.labs.overthewire.org -p 2220
+find / -size 33c -user bandit7 -group bandit6 2> /dev/null -exec cat {} +
 ```
 </details>
