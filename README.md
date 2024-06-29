@@ -186,3 +186,25 @@ chmod 600 rsa_key
 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i rsa_key bandit17@bandit.labs.overthewire.org -p 2220
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit18.html">Level 17 → Level 18</a></summary>
+
+```shell
+diff passwords.new passwords.old
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit19.html">Level 18 → Level 19</a></summary>
+
+```shell
+sshpass -p x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit20.html">Level 19 → Level 20</a></summary>
+
+```shell
+sshpass -p cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8 ssh bandit19@bandit.labs.overthewire.org -p 2220
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+</details>
