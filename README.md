@@ -43,3 +43,12 @@ cd inhere/
 cat ...Hiding-From-You
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit5.html">Level 4 → Level 5</a></summary>
+
+```shell
+sshpass -p 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ ssh bandit4@bandit.labs.overthewire.org -p 2220
+cd inhere/
+find . -type f -exec file {} + | grep ASCII | cut -d: -f1 | xargs cat
+```
+</details>
