@@ -76,3 +76,11 @@ sshpass -p morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj ssh bandit7@bandit.labs.overthewire.
 grep -n "millionth" data.txt | cut -f2 -d:
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit9.html">Level 8 → Level 9</a></summary>
+
+```shell
+sshpass -p dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc ssh bandit8@bandit.labs.overthewire.org -p 2220
+sort data.txt | uniq -u
+```
+</details>
