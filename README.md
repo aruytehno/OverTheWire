@@ -66,6 +66,7 @@ find . -type f -size 1033c -exec cat {} + | sed 's/ //g'
 ```shell
 sshpass -p HWasnPhtq9AVKe0dmk45nxy20cvUa6EG ssh bandit6@bandit.labs.overthewire.org -p 2220
 find / -size 33c -user bandit7 -group bandit6 2> /dev/null -exec cat {} +
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null -exec cat {} \;
 ```
 </details>
 <details>
@@ -74,6 +75,7 @@ find / -size 33c -user bandit7 -group bandit6 2> /dev/null -exec cat {} +
 ```shell
 sshpass -p morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj ssh bandit7@bandit.labs.overthewire.org -p 2220
 grep -n "millionth" data.txt | cut -f2 -d:
+cat data.txt | grep "millionth"
 ```
 </details>
 <details>
@@ -89,7 +91,7 @@ sort data.txt | uniq -u
 
 ```shell
 sshpass -p 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM ssh bandit9@bandit.labs.overthewire.org -p 2220
-strings data.txt | grep -i "=" 
+strings data.txt | grep '=='
 ```
 </details>
 <details>
@@ -107,6 +109,45 @@ base64 --decode data.txt
 
 ```shell
 sshpass -p dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr ssh bandit11@bandit.labs.overthewire.org -p 2220
-cat data.txt | tr [A-Za-z] [N-ZA-Mn-za-m]
+cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit13.html">Level 12 → Level 13</a></summary>
+
+```shell
+sshpass -p 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 ssh bandit12@bandit.labs.overthewire.org -p 2220
+mkdir /tmp/a1b1
+cd /tmp/a1b1
+cp ~/data.txt .
+xxd -r data.txt > bdata
+file bdata
+mv bdata bdata.gz
+gunzip bdata.gz
+file bdata
+mv bdata bdata.bz2
+file bdata
+bzip2 -d bdata.bz2
+file bdata
+mv bdata bdata.gz
+gunzip bdata.gz
+tar -xf bdata
+file data5.bin
+tar -xf data5.bin
+file data6.bin 
+file data6.bin.out
+bzip2 -d data6.bin
+tar -xf data6.bin.out
+file data8.bin
+mv data8.bin data8.bin.gz
+gunzip data8.bin.gz
+cat data8.bin
+```
+</details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit14.html">Level 13 → Level 14</a></summary>
+
+```shell
+sshpass -p FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
 </details>
