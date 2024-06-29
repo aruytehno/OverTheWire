@@ -34,3 +34,12 @@ sshpass -p 263JGJPfgU6LtdEvgfWU1XP5yac29mFx ssh bandit2@bandit.labs.overthewire.
 cat spaces\ in\ this\ filename 
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/bandit/bandit4.html">Level 3 → Level 4</a></summary>
+
+```shell
+sshpass -p MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx ssh bandit3@bandit.labs.overthewire.org -p 2220
+cd inhere/
+cat ...Hiding-From-You
+```
+</details>
