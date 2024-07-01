@@ -279,3 +279,17 @@ view-source:http://natas1.natas.labs.overthewire.org
 <!--The password for natas2 is TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI -->
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/natas/natas2.html">Level 1 → Level 2</a></summary>
+
+```text
+Username: natas2
+Password: TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+http://natas2.natas.labs.overthewire.org
+```
+```text
+Solution:
+http://natas2.natas.labs.overthewire.org/files/users.txt
+natas3:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+```
+</details>
