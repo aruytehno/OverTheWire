@@ -247,3 +247,16 @@ sshpass -p 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga ssh bandit23@bandit.labs.overthewire
 
 ```
 </details>
+
+
+## [Natas](https://overthewire.org/wargames/natas/)
+
+<details>
+<summary><a href="https://overthewire.org/wargames/natas/natas0.html">Level 0</a></summary>
+
+[http://natas0.natas.labs.overthewire.org](http://natas0.natas.labs.overthewire.org)
+```text
+Username: natas0
+Password: natas0
+```
+</details>
